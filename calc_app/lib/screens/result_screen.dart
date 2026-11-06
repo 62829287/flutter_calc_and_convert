@@ -38,7 +38,6 @@ class ResultScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        // Кнопка Назад наверху
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           tooltip: 'Назад',

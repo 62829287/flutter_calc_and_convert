@@ -62,7 +62,6 @@ class _ConverterScreenState extends State<ConverterScreen> {
     }
     setState(() => _error = null);
     
-    // На всякий случай сохраняем еще раз перед переходом
     await PreferencesService.saveConverterPair(_from, _to);
     
     if (!mounted) return;
@@ -108,7 +107,6 @@ class _ConverterScreenState extends State<ConverterScreen> {
                           onChanged: (v) {
                             if (v == null) return;
                             setState(() => _from = v);
-                            // Сохраняем сразу при изменении
                             PreferencesService.saveConverterPair(_from, _to);
                           },
                         ),
@@ -131,7 +129,6 @@ class _ConverterScreenState extends State<ConverterScreen> {
                           onChanged: (v) {
                             if (v == null) return;
                             setState(() => _to = v);
-                            // Сохраняем сразу при изменении
                             PreferencesService.saveConverterPair(_from, _to);
                           },
                         ),
