@@ -1,5 +1,4 @@
 class CurrencyService {
-  /// Курсы к USD: 1 единица валюты = X USD.
   static const Map<String, double> ratesToUsd = {
     'USD': 1.0,
     'EUR': 1.10,
